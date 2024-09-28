@@ -6,5 +6,5 @@
   (authors "Travis Hinkelman")
   (homepage "https://github.com/hinkelman/chez-tk")
   (license "BSD-2-Clause")
-  (depends ("chez-srfi" ">=0.0.0-akku <1.0.0"))
+  (depends ("chez-srfi" "^0.0.0-akku.209.552cd37"))
 )
