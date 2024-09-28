@@ -1,0 +1,10 @@
+#!r6rs ; -*- mode: scheme; coding: utf-8 -*-
+(import (akku format manifest))
+
+(akku-package ("chez-tk" "0.1.0")
+  (synopsis "A Chez Scheme Interface to the Tk GUI Toolkit")
+  (authors "Travis Hinkelman")
+  (homepage "https://github.com/hinkelman/chez-tk")
+  (license "BSD-2-Clause")
+  (depends ("chez-srfi" ">=0.0.0-akku <1.0.0"))
+)
