@@ -1,4 +1,4 @@
-;; https://rosettacode.org/wiki/Animate_a_pendulum#Scheme
+;; https://rosettacode.org/wiki/Archimedean_spiral#Scheme
 
 (import (chez-tk))
 
