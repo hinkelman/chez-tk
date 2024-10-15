@@ -1,8 +1,8 @@
-; https://github.com/KikyTokamuro/guile-pstk/blob/main/examples/ttt.scm
 ; PS/Tk Example Program Tic Tac Toe
 ; Copyright (C) 2021-2022 Daniil Archangelsky aka Kiky Tokamuro
 ; Copyright (C) 2006 Nils M Holm
 ; See the PS/Tk license for conditions of use.
+; https://github.com/KikyTokamuro/guile-pstk/blob/main/examples/ttt.scm
 
 (import (chez-tk))
 

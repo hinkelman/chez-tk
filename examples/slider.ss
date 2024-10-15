@@ -1,6 +1,7 @@
 ; PS/Tk Example Program "Slider"
 ; Copyright (C) 2022 Daniil Archangelsky aka Kiky Tokamuro
 ; See the PS/Tk license for conditions of use.
+; https://github.com/KikyTokamuro/guile-pstk/blob/main/examples/slider.scm
 
 (import (chez-tk))
 

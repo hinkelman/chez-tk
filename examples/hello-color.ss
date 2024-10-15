@@ -1,6 +1,7 @@
 ; PS/Tk Example Program "Hello World Color"
 ; Copyright (C) 2006 Nils M Holm
 ; See the PS/Tk license for conditions of use.
+; https://github.com/KikyTokamuro/guile-pstk/blob/main/examples/hello-color.scm
 
 (import (chez-tk))
 
