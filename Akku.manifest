@@ -1,10 +1,10 @@
 #!r6rs ; -*- mode: scheme; coding: utf-8 -*-
 (import (akku format manifest))
 
-(akku-package ("chez-tk" "1.8.0")
+(akku-package ("chez-tk" "1.8.1")
   (synopsis "A Chez Scheme Interface to the Tk GUI Toolkit")
   (maintainers "Travis Hinkelman")
-  (authors "Kenneth A. Dickey", "Nils M. Holm", "Wolf-Dieter Busch")
+  (authors "Kenneth A. Dickey" "Nils M. Holm" "Wolf-Dieter Busch")
   (homepage "https://github.com/hinkelman/chez-tk")
   (license "BSD-2-Clause")
   (depends ("thunderchez" "^0.0.0-akku.121.9d6344a"))
