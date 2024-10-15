@@ -6,7 +6,7 @@ Minor modification of [`(rebottled pstk)`](https://akkuscm.org/packages/(rebottl
 
 ## Requirements
 
-`chez-tk` requires [Tcl/Tk](https://www.tcl.tk/software/tcltk/). The program `tclsh` is used by default, but `tk-start` takes an optional second argument to specify another program, e.g., [`tclkit`](https://code.google.com/archive/p/tclkit/). `chez-tk` has only been tested on Linux.
+`chez-tk` requires [Tcl/Tk](https://www.tcl.tk/software/tcltk/). The program `tclsh` is used by default, but `tk-start` takes an optional second argument to specify an alternative program, e.g., [`tclkit`](https://code.google.com/archive/p/tclkit/). `chez-tk` has only been tested on Linux.
 
 ## Installation
 
@@ -16,7 +16,7 @@ Minor modification of [`(rebottled pstk)`](https://akkuscm.org/packages/(rebottl
 $ akku install chez-tk
 ```
 
-For more information on getting started with [Akku](https://akkuscm.org/), see this [blog post](https://www.travishinkelman.com/posts/getting-started-with-akku-package-manager-for-scheme/).
+For more information on getting started with [Akku](https://akkuscm.org/), see this [blog post](https://www.travishinkelman.com/getting-started-with-akku-package-manager-for-scheme/).
 
 Note: Submitted to Akku on 2024-10-14. Might take a few days to be available.
 
