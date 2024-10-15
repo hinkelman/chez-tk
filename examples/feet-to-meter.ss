@@ -10,7 +10,7 @@
   (let ((number (string->number item)))
     (if (number? number)
         (number->string
-         (/ (round (* number 0.3048 1000)) 10000))
+         (/ (round (* number 0.3048 10000)) 10000))
         "")))
 
 ;; used for adding padding to mainframe
