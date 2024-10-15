@@ -20,12 +20,12 @@
        (mainframe (tk 'create-widget 'frame 'padding: '(3 3 12 12)))
        (feet (mainframe 'create-widget 'entry 'width: 7))
        (label (mainframe 'create-widget 'label))
-       (calc-feet (lambda () 
+       (calc-meters (lambda () 
 		    (label 'configure 
 			   'text: (calculate (feet 'get)))))
        (button (mainframe 'create-widget 'button
 		          'text: 'Calculate
-		          'command: calc-feet)))
+		          'command: calc-meters)))
   (tk/wm 'title tk "Feet to Meters")
   (tk/grid mainframe 'column: 0 'row: 0 'sticky: 'nwes)
   (tk/grid feet 'column: 2 'row: 1 'sticky: 'we)
@@ -38,5 +38,5 @@
   (tk/grid (mainframe 'create-widget 'label 'text: "meters") 
 	   'column: 3 'row: 2 'sticky: 'w)
   (tk/focus feet)
-  (tk/bind tk '<Return> calc-feet)
+  (tk/bind tk '<Return> calc-meters)
   (tk-event-loop tk))
