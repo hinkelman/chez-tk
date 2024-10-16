@@ -18,8 +18,6 @@ $ akku install chez-tk
 
 For more information on getting started with [Akku](https://akkuscm.org/), see this [blog post](https://www.travishinkelman.com/getting-started-with-akku-package-manager-for-scheme/).
 
-Note: Submitted to Akku on 2024-10-14. Might take a few days to be available.
-
 ## Usage and examples
 
 Below is a simple example that will display `Hello world` in the REPL when the button is clicked.
