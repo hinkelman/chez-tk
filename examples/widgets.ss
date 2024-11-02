@@ -5,7 +5,7 @@
 
 (define tk (tk-start))
 (ttk-map-widgets 'all) ; make sure we are using tile widget set
-(ttk/set-theme "clam") ; (list-ref (ttk/available-themes) 0))
+;; (ttk/set-theme "clam") ; (list-ref (ttk/available-themes) 0))
 
 (tk/wm 'title tk "PS-Tk Example: Different Widgets")
 (tk 'configure 'height: 230 'width: 650)
@@ -85,6 +85,6 @@
 		  (display "Spin box:     ") (display (tk-get-var 'spin-value)) (newline)
       (display "Tree view:    ") (display (treeview 'selection)) (newline)
 		  ))
-	    'x: 200 'y: 150 'width: 100 'height: 35))
+	    'x: 200 'y: 150 'width: 120 'height: 35))
 
 (tk-event-loop tk)
