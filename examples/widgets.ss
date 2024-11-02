@@ -15,13 +15,11 @@
 ;;    This is done using tk-var and tk-get-var
 
 ;; create a checkbutton, and associated variable to hold its state
-(tk-var 'cb-value)
 (tk/place (tk 'create-widget 'checkbutton 'text: "Check me"
 	       'variable: (tk-var 'cb-value))
 	'x: 50 'y: 10 'width: 100 'height: 20)
 
 ;; create a set of radiobuttons, and associated variable/group
-(tk-var 'radio-value)
 (tk/place (tk 'create-widget 'radiobutton 'text: "Blue"
 			    'variable: (tk-var 'radio-value)
 			    'value: "Blue")
@@ -37,7 +35,6 @@
 (tk-set-var! 'radio-value "Blue") ; set an initial value for radio buttons
 
 ;; create a spinbox
-(tk-var 'spin-value)
 (tk/place (tk 'create-widget 'label 'text: "Spin: ") 'x: 10 'y: 120 'width: 30 'height: 20)
 (tk/place (tk 'create-widget 'spinbox 'from: 1 'to: 10 'textvariable: (tk-var 'spin-value))
 	  'x: 50 'y: 120 'width: 30 'height: 30)
