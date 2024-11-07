@@ -14,4 +14,4 @@
               (sleep (make-time 'time-duration (flonum->fixnum 1e8) 0))
               (loop (add1 i))]))
 
-(tk/destroy tk)
+(tk-end)
