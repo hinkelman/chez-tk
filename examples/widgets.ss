@@ -37,7 +37,7 @@
 ;; create a spinbox
 (tk/place (tk 'create-widget 'label 'text: "Spin: ") 'x: 10 'y: 120 'width: 30 'height: 20)
 (tk/place (tk 'create-widget 'spinbox 'from: 1 'to: 10 'textvariable: (tk-var 'spin-value))
-	  'x: 50 'y: 120 'width: 30 'height: 30)
+	  'x: 50 'y: 120 'width: 40 'height: 30)
 
 ;; create a drop-down combination list and a tree view
 ;; -- use of tiled widgets allows us to query a widget instance for its current state
