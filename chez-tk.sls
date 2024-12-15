@@ -62,6 +62,7 @@
 ; Thank you! 
 ; 
 ; Change Log:
+; 2024-12-12 Changed how pairs are handled in form->string
 ; 2024-10-14 Converted to Chez library and changed run-program to work with Chez. Removed support for other implementations. 
 ; 2017-05-11 Optional argument to 'start' for input of wish/tclsh program name.
 ; 2017-05-11 Converted into an R7RS library with Chibi, Gauche and Sagittarius support.
