@@ -298,10 +298,8 @@
             ((string? x) x) 
             ((null? x) "()") 
             ((pair? x) 
-             (string-append "(" 
-                            (apply string-append 
-                                   (improper-list->string x #t)) 
-                            ")")) 
+             (apply string-append 
+                    (improper-list->string x #t))) 
             ((eof-object? x) "#<eof>") 
             (else "#<other>")))) 
 
