@@ -16,7 +16,7 @@ Minor modification of [`(rebottled pstk)`](https://akkuscm.org/packages/(rebottl
 $ akku install chez-tk
 ```
 
-For more information on getting started with [Akku](https://akkuscm.org/), see this [blog post](https://www.travishinkelman.com/getting-started-with-akku-package-manager-for-scheme/).
+For more information on getting started with [Akku](https://akkuscm.org/), see this [blog post](https://www.travishinkelman.com/posts/getting-started-with-akku-package-manager-for-scheme/).
 
 ## Usage and examples
 
