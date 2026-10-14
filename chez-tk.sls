@@ -62,6 +62,7 @@
 ; Thank you! 
 ; 
 ; Change Log:
+; 2026-10-14 callToScm reads commands from stdin instead of using vwait, which deadlocked on nested callbacks
 ; 2024-12-12 Changed how pairs are handled in form->string
 ; 2024-10-14 Converted to Chez library and changed run-program to work with Chez. Removed support for other implementations. 
 ; 2017-05-11 Optional argument to 'start' for input of wish/tclsh program name.
@@ -196,9 +197,24 @@
                        " global scmVar" 
                        " set resultKey [autoName]" 
                        " puts \"(call $callKey \\\"$resultKey\\\" $args)\"" 
-                       " flush stdout" 
-                       " vwait scmVar($resultKey)" 
-                       " set result $scmVar($resultKey)" 
+                       " flush stdout"
+                       ;; tclsh doesn't read stdin while it evaluates a command from stdin,
+                       ;; so waiting with vwait deadlocks when a callback fires during a
+                       ;; Scheme->Tcl command (e.g., FocusOut while a dialog is open).
+                       ;; Instead, read and evaluate commands until the result arrives.
+                       " set blocking [fconfigure stdin -blocking]"
+                       " fconfigure stdin -blocking 1"
+                       " set cmd {}"
+                       " while {![info exists scmVar($resultKey)]} {"
+                       " if {[gets stdin line] < 0} {exit}"
+                       " append cmd $line \\n"
+                       " if {[info complete $cmd]} {"
+                       " uplevel #0 $cmd"
+                       " set cmd {}"
+                       " }"
+                       " }"
+                       " fconfigure stdin -blocking $blocking"
+                       " set result $scmVar($resultKey)"
                        " unset scmVar($resultKey)" 
                        " set result" 
                        "}" 
